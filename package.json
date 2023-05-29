@@ -1,8 +1,8 @@
 {
-  "name": "@marinoandrea/react-form-utils",
+  "name": "@marinoandrea/react-debounced-input",
   "version": "0.1.0",
-  "description": "Simple React form utilities for common functionalities not supported in HTML5.",
-  "repository": "https://github.com/marinoandrea/react-form-utils",
+  "description": "Simple React input component that debounces calls to onChange.",
+  "repository": "https://github.com/marinoandrea/react-debounced-input",
   "license": "MIT",
   "private": false,
   "author": {
