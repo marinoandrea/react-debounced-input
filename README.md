@@ -1,29 +1,27 @@
-# react-form-utils
+# react-debounced-input
 
-Simple collection of React form related componenents that support commonly used UI/UX patterns.
+Simple React input component that debounces calls to onChange.
 
 ## Install
 
 With npm:
 
 ```bash
-npm install @marinoandrea/react-form-utils
+npm i --save @marinoandrea/react-debounced-input
 ```
 
 With Yarn:
 
 ```bash
-yarn install @marinoandrea/react-form-utils
+yarn add @marinoandrea/react-debounced-input
 ```
 
 ## Usage
 
-### `DebouncedInput`
-
 Search bar using `@tanstack/react-query`:
 
 ```JSX
-import { DebouncedInput } from "@marinoandrea/react-form-utils";
+import { DebouncedInput } from "@marinoandrea/react-debounced-input";
 import { useState } from "react";
 import { useQuery } from '@tanstack/react-query'
 
@@ -50,3 +48,9 @@ export default function App() {
 ```
 
 _Note: The call to `setQuery` is gonna be debounced by `300` milliseconds but the input value is still gonna change immediately as it's not controlled here._
+
+## Authors
+
+- **Andrea Marino** - ([marinoandrea](https://github.com/marinoandrea))
+
+See also the list of [contributors](https://github.com/marinoandrea/reactome-graph/contributors) who participated in this project.
