@@ -1,1 +1,4 @@
-export { default as DebouncedInput } from "./DebouncedInput";
+export {
+  default as DebouncedInput,
+  DebouncedInputProps,
+} from "./DebouncedInput";

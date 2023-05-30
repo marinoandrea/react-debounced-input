@@ -1,6 +1,6 @@
 import { FormEvent, HTMLProps, useEffect, useState } from "react";
 
-interface DebouncedInputProps extends HTMLProps<HTMLInputElement> {
+export interface DebouncedInputProps extends HTMLProps<HTMLInputElement> {
   /** Number of milliseconds between every call of `onChange` (defaults to `300`) */
   debounceMs?: number;
 }
