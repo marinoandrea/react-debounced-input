@@ -1,11 +1,15 @@
 {
   "name": "@marinoandrea/react-debounced-input",
   "version": "0.1.2",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/marinoandrea"
-  },
   "description": "Simple React input component that debounces calls to onChange.",
-  "repository": "https://github.com/marinoandrea/react-debounced-input",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marinoandrea/react-debounced-input.git"
+  },
   "license": "MIT",
   "private": false,
   "author": {
