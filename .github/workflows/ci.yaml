@@ -1,11 +1,12 @@
 name: ci
 
 on:
-  release:
-    types: [published]
+  push:
+    branches:
+      - main
 
 jobs:
-  test:
+  publish:
     runs-on: "ubuntu-latest"
 
     strategy:
@@ -23,7 +24,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: install dependencies
-        run: yarn install --frozen-lockfile
+        run: yarn install
 
       - name: run jest
         run: yarn test
@@ -31,19 +32,9 @@ jobs:
       - name: send coverage
         uses: codecov/codecov-action@v3
 
-  publish:
-    needs: test
-
-    runs-on: "ubuntu-latest"
-
-    steps:
-      - name: checkout
-        uses: actions/checkout@v2
-
       - name: run rollup build
         run: yarn rollup
 
-      - name: publish package
-        run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - uses: JS-DevTools/npm-publish@v2
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
