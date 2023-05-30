@@ -1,5 +1,10 @@
 # react-debounced-input
 
+[![ci](https://github.com/marinoandrea/react-debounced-input/actions/workflows/ci.yaml/badge.svg)](https://github.com/marinoandrea/react-debounced-input/actions/workflows/ci.yaml)
+[![codecov](https://codecov.io/gh/marinoandrea/react-debounced-input/branch/main/graph/badge.svg?token=CLH2HL36PS)](https://codecov.io/gh/marinoandrea/react-debounced-input)
+![npm](https://img.shields.io/npm/v/@marinoandrea/react-debounced-input)
+![GitHub](https://img.shields.io/github/license/marinoandrea/react-debounced-input)
+
 Simple React input component that debounces calls to onChange.
 
 ## Install
