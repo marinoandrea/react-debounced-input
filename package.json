@@ -2,6 +2,15 @@
   "name": "@marinoandrea/react-debounced-input",
   "version": "1.0.0",
   "description": "Simple React input component that debounces calls to onChange.",
+  "keywords": [
+    "react",
+    "react-js",
+    "react-component",
+    "component",
+    "debouncing",
+    "debounced",
+    "input"
+  ],
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
@@ -43,6 +52,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
     "@types/jest": "^29.5.1",
+    "@types/node": "^20.2.5",
     "@types/react": "^18.2.7",
     "babel-jest": "^29.5.0",
     "eslint": "^8.41.0",
