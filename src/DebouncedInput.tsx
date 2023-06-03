@@ -23,5 +23,7 @@ export default function DebouncedInput({
 
   // NOTE: the event must be copied in order for the currentTarget to persist.
   // For more info about the event pooling: https://github.com/facebook/react/issues/2857
-  return <input {...props} onChange={(e) => setLastEvent({ ...e })} />;
+  return (
+    <input {...props} onChange={(e) => setLastEvent(structuredClone(e))} />
+  );
 }
