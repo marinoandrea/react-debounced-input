@@ -1,6 +1,6 @@
 {
   "name": "@marinoandrea/react-debounced-input",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple React input component that debounces calls to onChange.",
   "keywords": [
     "react",
