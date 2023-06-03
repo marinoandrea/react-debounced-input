@@ -5,7 +5,7 @@
 ![npm](https://img.shields.io/npm/v/@marinoandrea/react-debounced-input)
 ![GitHub](https://img.shields.io/github/license/marinoandrea/react-debounced-input)
 
-Simple React input component that debounces calls to onChange.
+Simple React input component that debounces calls to `onChange`. It behaves like a `<input>` everywhere else.
 
 ## Install
 
