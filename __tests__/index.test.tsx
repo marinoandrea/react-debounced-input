@@ -10,6 +10,9 @@ function sleep(delay: number) {
   });
 }
 
+// FIXME: this fixes jsdom issue with structuredClone: https://github.com/jsdom/jsdom/issues/3363
+global.structuredClone = jest.fn((val: object) => ({ ...val }));
+
 describe("DebouncedInput", () => {
   it("renders without setting the timeout", () => {
     render(<DebouncedInput placeholder={PLACEHOLDER_TEXT} />);
